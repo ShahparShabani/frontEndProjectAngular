@@ -1,9 +1,3 @@
-/** Color Palette **/
-/* Basic colors*/
-/* gray */
-/* Yellow */
-/* Amber */
-/* Orange */
 section {
   font-size: 1.2rem;
 }
@@ -15,7 +9,7 @@ section iframe {
 }
 
 section .contact-form {
-  border-top: 1px solid #8ad1bb;
+  border-top: 1px solid #c8c9ca;
   width: 60%;
 }
 

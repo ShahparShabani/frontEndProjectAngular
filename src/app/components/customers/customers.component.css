@@ -1,1 +1,53 @@
-/* No CSS *//*# sourceMappingURL=customers.component.css.map */
+section.c-customer-clients img {
+  width: 10%;
+  height: 10%;
+}
+
+section.c-customer-clients img.nikon {
+  margin-top: -.5rem;
+}
+
+section.c-customer-clients img.youtube {
+  margin-top: -.8rem;
+}
+
+section.c-customer-clients img.panasonic {
+  width: 12%;
+  margin-top: -.8rem;
+}
+
+section.c-customer-clients img.codeFactory {
+  width: 12%;
+}
+
+section.c-section-text .c-reviews {
+  background-color: #dee2e6;
+}
+
+section.c-section-images div.c-images img {
+  width: 30%;
+  margin-right: .5rem;
+  margin-bottom: .5rem;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+section.c-section-images div.c-images img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  section iframe {
+    width: 100%;
+    min-height: auto;
+  }
+}
+
+@media screen and (min-width: 768) and (max-width: 991px) {
+  section iframe {
+    width: 100%;
+    min-height: auto;
+  }
+}
+/*# sourceMappingURL=customers.component.css.map */
