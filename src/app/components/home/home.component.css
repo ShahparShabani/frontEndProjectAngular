@@ -1,1 +1,72 @@
-/* No CSS *//*# sourceMappingURL=home.component.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+/** Color Palette **/
+/* Basic colors*/
+/* gray */
+/* Yellow */
+/* Amber */
+/* Orange */
+/* Main content ------------------------- */
+main {
+  /* Featurettes ------------------------- */
+  /* Thin out the marketing headings */
+}
+
+main .c-featurette-divider {
+  margin: 5rem 0;
+  /* Space out the Bootstrap <hr> more */
+}
+
+main .c-featurette .c-img-zoom {
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  cursor: pointer;
+}
+
+main .c-featurette .c-img-zoom:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  /* Scale image on hover */
+}
+
+main .c-featurette-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.05rem;
+}
+
+main .c-normal-heading {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -0.05rem;
+}
+
+main #gallery-container .c-img-zoom {
+  -webkit-transition: -webkit-transform 0.5s ease;
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+main #gallery-container .c-img-zoom:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  z-index: +1;
+  -webkit-filter: none;
+          filter: none;
+}
+
+/* RESPONSIVE CSS --------------------------- */
+@media (min-width: 40em) {
+  .c-featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .c-featurette-heading {
+    margin-top: 7rem;
+  }
+}
+/*# sourceMappingURL=home.component.css.map */

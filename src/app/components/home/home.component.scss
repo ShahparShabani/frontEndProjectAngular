@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import "../../../assets/style/variables";
+
+/* Main content ------------------------- */
+main {
+  /* Featurettes ------------------------- */
+
+  .c-featurette-divider {
+    margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  }
+
+  .c-featurette {
+    .c-img-zoom {
+      transition: 0.2s ease;
+      cursor: pointer;
+    }
+
+    .c-img-zoom:hover {
+      transform: scale(1.2); /* Scale image on hover */
+    }
+  }
+
+  /* Thin out the marketing headings */
+  .c-featurette-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -0.05rem;
+  }
+
+  .c-normal-heading {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -0.05rem;
+  }
+
+  #gallery-container {
+    .c-img-zoom {
+      transition: transform 0.5s ease;
+      filter: grayscale(100%);
+    }
+    .c-img-zoom:hover {
+      transform: scale(1.05);
+      z-index: +1;
+      filter: none;
+    }
+  }
+}
+
+/* RESPONSIVE CSS --------------------------- */
+
+@media (min-width: 40em) {
+  .c-featurette-heading {
+    font-size: 50px;
+  }
+}
+
+@media (min-width: 62em) {
+  .c-featurette-heading {
+    margin-top: 7rem;
+  }
+}
+
+

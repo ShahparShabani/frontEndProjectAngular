@@ -1,0 +1,165 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap");
+@import "../../../assets/style/variables";
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 0;
+}
+
+header {
+    position: relative;
+    padding: 0;
+  
+    #title-logo-wrapper {
+      position: absolute;
+      top: 0;
+      z-index: 2;
+      box-sizing: border-box;
+  
+      #logo-img {
+        width: 300px;
+        max-width: 300px;
+        height: auto;
+      }
+    }
+  
+    .navbar {
+      display: block;
+      z-index: 2;
+      margin: auto;
+      padding: 0 44px;
+    }
+  
+    .c-fixed-top {
+      position: fixed !important;
+      top: 0 !important;
+      right: 0 !important;
+      left: 0 !important;
+      z-index: 1030 !important;
+      background-color: rgba(
+        var(--bs-light-rgb),
+        var(--bs-bg-opacity)
+      ) !important;
+      color: black !important;
+  
+      .active {
+        color: black !important;
+      }
+    }
+  
+    .c-navbar {
+      position: absolute;
+      top: 100px;
+      left: 0;
+      right: 0 !important;
+      left: 0 !important;
+      background: transparent !important;
+      color: white !important;
+  
+      .active {
+        color: white !important;
+      }
+  
+      .c-header-inner {
+        padding: 44px 0;
+        margin: auto;
+      }
+    }
+  
+    /* Carousel ------------------------- */
+  
+    #myCarousel {
+      .carousel-item {
+        // Force carousel image to cover the entire screen height
+        img {
+          object-fit: cover;
+          object-position: center;
+          height: 100vh;
+          overflow: hidden;
+        }
+      }
+    }
+  
+    .carousel {
+      margin-bottom: 4rem;
+  
+      .carousel-item {
+        height: 40rem;
+      }
+    }
+  }
+
+#footer-container {
+  a {
+    text-decoration: none;
+  }
+}
+
+/* Footer style   ------------------------- */
+footer {
+  font-family: "Montserrat", sans-serif;
+  background-color: $gray-300;
+
+  img.c-footer-logo {
+    width: 15%;
+    margin: -2rem 0 0.8rem 0;
+  }
+
+  li:hover,
+  a:hover {
+    cursor: pointer;
+    font-weight: bold;
+  }
+}
+
+// media queries for x-small screen
+@media screen and (max-width: 576px) {
+  footer {
+    font-size: 0.8rem;
+    h4 {
+      font-size: 1rem;
+    }
+
+    div.c-footer-text {
+      display: none !important;
+    }
+  }
+}
+
+// media queries for small screen
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  footer {
+    font-size: 0.8rem;
+
+    .c-footer-text {
+      p.c-firstP {
+        margin: 0 -1.5rem;
+      }
+      p.c-secondP {
+        margin: 0 -1rem;
+      }
+      img {
+        width: 30%;
+        margin-top: -1.8rem;
+      }
+    }
+  }
+}
+
+// media queries for xl-xxl screen
+@media screen and (min-width: 1200px) {
+  footer {
+    p.c-secondP {
+      margin-left: -1.7rem;
+    }
+
+    p.c-firstP {
+      margin-right: -2.2rem;
+    }
+  }
+}

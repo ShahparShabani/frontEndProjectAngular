@@ -1,1 +1,66 @@
-/* No CSS *//*# sourceMappingURL=footer.component.css.map */
+/** Color Palette **/
+/* Basic colors*/
+/* gray */
+/* Yellow */
+/* Amber */
+/* Orange */
+footer {
+  font-family: "Montserrat", sans-serif;
+  background-color: #dee2e6;
+}
+
+footer img.c-footer-logo {
+  width: 15%;
+  margin: -2rem 0 0.8rem 0;
+}
+
+footer li:hover,
+footer a:hover {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 576px) {
+  footer {
+    font-size: 0.8rem;
+  }
+  footer h4 {
+    font-size: 1rem;
+  }
+  footer div.c-footer-text {
+    display: none !important;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  footer {
+    font-size: 0.8rem;
+  }
+  footer .c-footer-text p.c-firstP {
+    margin: 0 -1.5rem;
+  }
+  footer .c-footer-text p.c-secondP {
+    margin: 0 -1rem;
+  }
+  footer .c-footer-text img {
+    width: 30%;
+    margin-top: -1.8rem;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  section iframe {
+    width: 100%;
+    min-height: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  footer p.c-secondP {
+    margin-left: -1.7rem;
+  }
+  footer p.c-firstP {
+    margin-right: -2.2rem;
+  }
+}
+/*# sourceMappingURL=footer.component.css.map */
